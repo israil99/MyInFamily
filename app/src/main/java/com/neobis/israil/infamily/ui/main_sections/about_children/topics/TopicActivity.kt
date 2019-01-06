@@ -1,9 +1,7 @@
 package com.neobis.israil.infamily.ui.main_sections.about_children.topics
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.Snackbar
-import android.util.Log
 import com.neobis.israil.infamily.BaseActivity
 import com.neobis.israil.infamily.R
 import com.neobis.israil.infamily.model.Category

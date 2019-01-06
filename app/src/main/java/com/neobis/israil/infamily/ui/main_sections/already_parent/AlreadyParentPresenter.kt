@@ -1,9 +1,12 @@
 package com.neobis.israil.infamily.ui.main_sections.already_parent
 
+import android.content.Context
+import android.content.Intent
 import android.util.Log
 import com.neobis.israil.infamily.R
 import com.neobis.israil.infamily.StartApplication
 import com.neobis.israil.infamily.model.Section
+import com.neobis.israil.infamily.ui.main_sections.about_children.topics.TopicActivity
 import com.neobis.israil.infamily.utill.Connection
 import retrofit2.Call
 import retrofit2.Callback
@@ -39,6 +42,19 @@ class AlreadyParentPresenter (val view: AlreadyParentContract.View?) : AlreadyPa
             }
 
         })
+    }
+    fun startActivity(context: Context, position:Int){
+        val intent = Intent(context, TopicActivity::class.java)
+        var timelineId:Int = 0
+        when(position){
+            0 -> timelineId = 7
+            1 -> timelineId = 9
+            2 -> timelineId = 20
+
+        }
+        intent.putExtra("topic",timelineId)
+        context.startActivity(intent)
+
     }
 
 

@@ -40,9 +40,9 @@ class AlreadyParentAdapter (var list: MutableList<Section>, private var listener
             itemView.tag = position
             itemView.setOnClickListener {
                 val index = it.tag as Int
-/*
+
                 listener.onItemSelectedAt(index)
-*/
+
             }
 
         }
@@ -50,6 +50,8 @@ class AlreadyParentAdapter (var list: MutableList<Section>, private var listener
 
 
     interface Listener {
+        fun onItemSelectedAt(index: Int) {
+        }
 
     }
     fun setPostList(otherList: MutableList<Section>) {

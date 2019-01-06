@@ -44,5 +44,9 @@ class AlreadyParentActivity : BaseActivity(),AlreadyParentAdapter.Listener,Alrea
         Log.d("Error",message)
     }
 
+    override fun onItemSelectedAt(index: Int) {
+        presenter.startActivity(this,index)
+    }
+
 }
 
