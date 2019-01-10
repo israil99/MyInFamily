@@ -6,7 +6,7 @@ import android.util.Log
 import com.neobis.israil.infamily.R
 import com.neobis.israil.infamily.StartApplication
 import com.neobis.israil.infamily.model.Section
-import com.neobis.israil.infamily.ui.main_sections.about_children.topics.TopicActivity
+import com.neobis.israil.infamily.ui.main_sections.topics.TopicActivity
 import com.neobis.israil.infamily.utill.Connection
 import retrofit2.Call
 import retrofit2.Callback

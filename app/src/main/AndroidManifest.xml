@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.main_sections.MainActivity">
+        <activity
+            android:name=".ui.main_sections.MainActivity"
+            android:theme="@style/AppThemeCollapsed">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,7 +28,8 @@
         <activity
             android:name=".ui.main_sections.become_parent.information.InformationActivity"
             android:theme="@style/AppThemeCollapsed"></activity>
-        <activity android:name=".ui.main_sections.about_children.topics.TopicActivity"></activity>
+        <activity android:name="com.neobis.israil.infamily.ui.main_sections.topics.TopicActivity"></activity>
+        <activity android:name=".ui.main_sections.ArticleActivity"></activity>
     </application>
 
 </manifest>

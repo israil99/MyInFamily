@@ -1,4 +1,4 @@
-package com.neobis.israil.infamily.ui.main_sections.about_children.topics
+package com.neobis.israil.infamily.ui.main_sections.topics
 
 import android.os.Bundle
 import android.support.design.widget.Snackbar
@@ -41,7 +41,7 @@ class TopicActivity : BaseActivity(),TopicContract.View,TopicAdapter.Listener {
     }
 
     override fun onItemSeletedAt(position: Category) {
-        //presenter.startActivity(this,position)
+        presenter.startActivity(this,position)
     }
     override fun onSectionResponse(result: Category) {
     }

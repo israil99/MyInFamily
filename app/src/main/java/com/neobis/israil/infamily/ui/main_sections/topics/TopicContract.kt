@@ -1,7 +1,6 @@
-package com.neobis.israil.infamily.ui.main_sections.about_children.topics
+package com.neobis.israil.infamily.ui.main_sections.topics
 
 import com.neobis.israil.infamily.model.Category
-import com.neobis.israil.infamily.model.Section
 import com.neobis.israil.infamily.utill.ProgBar
 import com.neobis.israil.infamily.utill.SuccessOrError
 

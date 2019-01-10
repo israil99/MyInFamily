@@ -1,9 +1,12 @@
-package com.neobis.israil.infamily.ui.main_sections.about_children.topics
+package com.neobis.israil.infamily.ui.main_sections.topics
 
+import android.app.ActivityOptions
+import android.content.Intent
 import android.util.Log
 import com.neobis.israil.infamily.R
 import com.neobis.israil.infamily.StartApplication
 import com.neobis.israil.infamily.model.Category
+import com.neobis.israil.infamily.ui.main_sections.ArticleActivity
 import com.neobis.israil.infamily.utill.Connection
 import retrofit2.Call
 import retrofit2.Callback
@@ -39,5 +42,16 @@ class TopicPresenter(val view :TopicContract.View):TopicContract.Presenter{
             }
 
         })
+
+
+
+    }
+    fun startActivity(activity: TopicActivity,category:Category){
+        val intent = Intent(activity, ArticleActivity::class.java)
+        intent.putExtra("article",category)
+
+        val options = ActivityOptions.makeCustomAnimation(activity, R.anim.abc_slide_in_bottom,R.anim.abc_slide_out_bottom)
+        activity.startActivity(intent,options.toBundle())
+
     }
 }
