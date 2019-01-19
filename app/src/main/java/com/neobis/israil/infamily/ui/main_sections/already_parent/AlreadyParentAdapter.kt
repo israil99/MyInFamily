@@ -36,7 +36,7 @@ class AlreadyParentAdapter (var list: MutableList<Section>, private var listener
             itemView.tv_title.text = list[position].title
             Glide.with(itemView.context)
                     .load(list.get(position).image)
-                    .into(itemView.iwSection)
+                    .into(itemView.iwCategory)
             itemView.tag = position
             itemView.setOnClickListener {
                 val index = it.tag as Int

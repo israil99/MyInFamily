@@ -7,31 +7,31 @@
     android:layout_height="140dp"
     android:layout_margin="8dp"
     app:cardCornerRadius="5dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
     tools:style="@style/CardView">
 
-    <LinearLayout
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/image_category"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:scaleType="centerCrop"
+        android:tint="#6f4d4c4c"
+        />
 
-        <TextView
-            android:gravity="center"
-            android:id="@+id/tv_title"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="22sp"
-            android:textColor="@android:color/black"
-            android:layout_marginStart="11sp" />
+    <TextView
+    android:layout_margin="6dp"
+    android:id="@+id/tv_title"
+    android:textSize="22sp"
+    android:textStyle="bold"
+    android:fontFamily="sans-serif-condensed"
+    android:textColor="@android:color/white"
+    android:text="Часто задаваемые вопросы"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
 
-        <ImageView
-            android:id="@+id/image_category"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="8dp"
-            android:scaleType="centerCrop"
-            android:contentDescription="@string/app_name" />
 
-    </LinearLayout>
+
 </android.support.v7.widget.CardView>

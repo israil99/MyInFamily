@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "958995271364",
+    "firebase_url": "https://infamily-24024.firebaseio.com",
+    "project_id": "infamily-24024",
+    "storage_bucket": "infamily-24024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958995271364:android:669e5210bc3dfb58",
+        "android_client_info": {
+          "package_name": "com.neobis.israil.infamily"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958995271364-712rei7i6b65qnmqgu42gki6vbltq0ai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlStuqzqLkluPuFfSigWTt9AU42BS262c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

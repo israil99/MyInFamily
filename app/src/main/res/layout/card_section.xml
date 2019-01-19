@@ -2,7 +2,7 @@
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/card_section"
+    android:id="@+id/rootView"
     android:layout_width="match_parent"
     android:layout_height="140dp"
     android:layout_margin="8dp"
@@ -12,9 +12,9 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/iwSection"
+        android:id="@+id/iwCategory"
         android:scaleType="centerCrop"
-        android:tint="#6F000000"
+        android:tint="#6f4d4c4c"
         />
 
     <TextView

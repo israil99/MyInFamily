@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#0E81D1</color>
-    <color name="colorPrimaryDark">#0E81D1</color>
+    <color name="colorPrimaryDark">#0e81d1</color>
     <color name="colorAccent">#FF4081</color>
     <color name="tabLayoutText">#fff</color>
     <color name="tabIndicatorColor">#2d2d2d</color>
     <color name="background">#ecececae</color>
+    <color name="testBack">#79d3f1</color>
 </resources>

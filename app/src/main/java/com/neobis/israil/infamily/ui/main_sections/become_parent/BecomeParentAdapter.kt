@@ -11,6 +11,8 @@ import com.bumptech.glide.Glide
 import com.neobis.israil.infamily.R
 import com.neobis.israil.infamily.model.Section
 import com.neobis.israil.infamily.ui.main_sections.become_parent.information.InformationActivity
+import com.neobis.israil.infamily.ui.main_sections.become_parent.quiz.QuizActivity
+import com.neobis.israil.infamily.ui.main_sections.become_parent.signup.AuthActivity
 import kotlinx.android.synthetic.main.card_section.view.*
 
 class BecomeParentAdapter(var list: MutableList<Section>, private var listener: Listener, private var context: Context) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
@@ -28,13 +30,6 @@ class BecomeParentAdapter(var list: MutableList<Section>, private var listener: 
         if (holder is ViewHolder)
             holder.bind(position)
 
-        holder.itemView.setOnClickListener{
-            val intent: Intent
-            if (position==0){
-                intent = Intent(context, InformationActivity::class.java)
-                context.startActivity(intent)
-            }
-        }
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -43,17 +38,16 @@ class BecomeParentAdapter(var list: MutableList<Section>, private var listener: 
 
 
         fun bind(position: Int) {
-            val cardView = itemView.findViewById<CardView>(R.id.card_section)
             itemView.tv_title.text = list[position].title
             Glide.with(itemView.context)
                     .load(list.get(position).image)
-                    .into(itemView.iwSection)
+                    .into(itemView.iwCategory)
             itemView.tag = position
             itemView.setOnClickListener {
                 val index = it.tag as Int
-/*
+
                 listener.onItemSelectedAt(index)
-*/
+
             }
 
         }
@@ -61,7 +55,7 @@ class BecomeParentAdapter(var list: MutableList<Section>, private var listener: 
 
 
     interface Listener {
-
+        fun onItemSelectedAt(position: Int)
     }
     fun setPostList(otherList: MutableList<Section>) {
         list = otherList

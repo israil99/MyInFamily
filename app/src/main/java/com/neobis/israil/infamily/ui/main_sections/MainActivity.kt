@@ -1,6 +1,7 @@
 package com.neobis.israil.infamily.ui.main_sections
 
 import android.content.Intent
+import android.graphics.Typeface
 import android.os.Bundle
 import com.neobis.israil.infamily.BaseActivity
 import com.neobis.israil.infamily.R
@@ -9,6 +10,7 @@ import com.neobis.israil.infamily.model.MainSection
 import com.neobis.israil.infamily.ui.main_sections.about_children.AboutChildrenActivity
 import com.neobis.israil.infamily.ui.main_sections.already_parent.AlreadyParentActivity
 import com.neobis.israil.infamily.ui.main_sections.become_parent.BecomeParentActivity
+import com.neobis.israil.infamily.ui.main_sections.specialists.SpecialistActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity: BaseActivity() , MainAdapter.Listener {
@@ -21,6 +23,11 @@ private lateinit var adapter: MainAdapter
         initTitles()
         initClickListeners()
         setupActionBar()
+
+
+        val typeface = Typeface.createFromAsset(assets, "fonts/FredokaOne-Regular.ttf")
+
+        title_main.typeface = typeface
 
     }
 
@@ -41,6 +48,10 @@ private lateinit var adapter: MainAdapter
         third_main_card.setOnClickListener {
              intent = Intent(this, AlreadyParentActivity::class.java)
              startActivity(intent)
+        }
+        fourth_main_card.setOnClickListener {
+            intent = Intent(this, SpecialistActivity::class.java)
+            startActivity(intent)
         }
 
     }

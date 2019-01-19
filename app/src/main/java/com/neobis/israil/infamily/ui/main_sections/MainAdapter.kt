@@ -12,6 +12,7 @@ import com.neobis.israil.infamily.model.MainSection
 import com.neobis.israil.infamily.ui.main_sections.about_children.AboutChildrenActivity
 import com.neobis.israil.infamily.ui.main_sections.already_parent.AlreadyParentActivity
 import com.neobis.israil.infamily.ui.main_sections.become_parent.BecomeParentActivity
+import com.neobis.israil.infamily.ui.main_sections.specialists.SpecialistActivity
 import kotlinx.android.synthetic.main.card_category.view.*
 
 
@@ -40,6 +41,9 @@ class MainAdapter(var list: List<MainSection>, private var listener: Listener, p
                 context.startActivity(intent)
             }else if(position==2){
                 intent = Intent(context,AlreadyParentActivity::class.java)
+                context.startActivity(intent)
+            }else if(position==3){
+                intent = Intent(context,SpecialistActivity::class.java)
                 context.startActivity(intent)
             }
         }
